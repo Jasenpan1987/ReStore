@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { IProduct } from "../../app/models/Products";
 import ProductList from "./ProductList";
+import { Axios } from "axios";
 
 export default function Catalog() {
   const [products, setProducts] = useState<IProduct[]>([]);
